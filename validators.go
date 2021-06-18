@@ -1118,7 +1118,7 @@ func convert(val interface{}) (value interface{}, err error) {
 	case reflect.Uint, reflect.Uint8, reflect.Uint16, reflect.Uint32, reflect.Uint64:
 		value = v.Uint()
 	case reflect.Float64, reflect.Float32:
-		value = int64(val.(float64))
+		value = v.Float()
 	default:
 		err = errConvertFail
 	}
