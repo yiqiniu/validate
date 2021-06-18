@@ -1,4 +1,4 @@
-module github.com/gookit/validate
+module github.com/yiqiniu/validate
 
 go 1.12
 
